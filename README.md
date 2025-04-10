@@ -63,10 +63,10 @@ Running Tests in headed mode (UI)
 npx cypress run --headed
 
 **4. Interactive mode (GUI)**
-> npx cypress open
-> Select the E2E Testing
-> Select the browser (eg. Chrome) and click on Start E2E Testing in Chrome
-> Select the test that want to run 
+- > npx cypress open
+- > Select the E2E Testing
+- > Select the browser (eg. Chrome) and click on Start E2E Testing in Chrome
+- > Select the test that want to run 
 
 ## 🌐 Environment Configuration
 **The framework supports multiple environments like dev and production.
