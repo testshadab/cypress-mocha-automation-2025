@@ -4,7 +4,7 @@ This framework is a **Cypress-based test automation** setup for testing the **Lu
 
 ---
 
-## 📁 Folder Structure
+## 📁 Folder Structure:
 
 Luma-Cypress-POC-2025/
 │
@@ -34,7 +34,7 @@ Luma-Cypress-POC-2025/
 
 ---
 
-## 📌 In Simple Terms
+## 📌 In Simple Terms:
 
 - **tests/** – Where your **test scenarios** live  
 - **actions/** – Where your **test steps** (e.g., login actions) are written using page objects  
@@ -45,18 +45,18 @@ Luma-Cypress-POC-2025/
 
 ---
 
-## 🔧 Setup Instructions
+## 🔧 Setup Instructions:
 
-**1. Clone the repo**
+**1. Clone the repo:**
 
 - https://github.com/testshadab/cypress-mocha-automation-2025.git
 ---
 
-**2. Install dependencies**
+**2. Install dependencies:**
 - npm install
 ---
 
-**3. Running Tests**
+**3. Running Tests:**
 - Running Tests in headless mode (CLI)
 - npx cypress run
 
@@ -64,14 +64,14 @@ Luma-Cypress-POC-2025/
 - npx cypress run --headed
 ---
 
-**4. Interactive mode (GUI)**
+**4. Interactive mode (GUI):**
 - npx cypress open
 - Select the E2E Testing
 - Select the browser (eg. Chrome) and click on Start E2E Testing in Chrome
 - Select the test that want to run 
 ---
 
-## 🌐 Environment Configuration
+## 🌐 Environment Configuration:
 **The framework supports multiple environments like dev and production.
 To run against a specific environment, update your test or use Cypress environment variables as needed:**
 
@@ -83,7 +83,7 @@ To run against a specific environment, update your test or use Cypress environme
 - cypress/fixtures/production/credentials.json
 ---
 
-## 📸 Reports, Videos, and Screenshots
+## 📸 Reports, Videos, and Screenshots:
 **Screenshots of failed tests are saved in:**
 - cypress/screenshots/
 ---
