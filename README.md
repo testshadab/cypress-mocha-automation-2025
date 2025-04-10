@@ -55,11 +55,11 @@ Luma-Cypress-POC-2025/
 - npm install
 
 **3. Running Tests**
-Running Tests in headless mode (CLI)
-npx cypress run
+- Running Tests in headless mode (CLI)
+- npx cypress run
 
-Running Tests in headed mode (UI)
-npx cypress run --headed
+- Running Tests in headed mode (UI)
+- npx cypress run --headed
 
 **4. Interactive mode (GUI)**
 - npx cypress open
@@ -71,16 +71,16 @@ npx cypress run --headed
 **The framework supports multiple environments like dev and production.
 To run against a specific environment, update your test or use Cypress environment variables as needed:**
 
-npx cypress run --env environment=dev
+- npx cypress run --env environment=dev
 
 **Test credentials and other data are stored under:**
-cypress/fixtures/dev/credentials.json
-cypress/fixtures/production/credentials.json
+- cypress/fixtures/dev/credentials.json
+- cypress/fixtures/production/credentials.json
 
 ## 📸 Reports, Videos, and Screenshots
 **Screenshots of failed tests are saved in:**
-cypress/screenshots/
+- cypress/screenshots/
 
 **Videos of test runs (if enabled):**
-cypress/videos/
+- cypress/videos/
 
