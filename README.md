@@ -47,23 +47,22 @@ Luma-Cypress-POC-2025/
 
 ## 🔧 Setup Instructions
 
-### 1. **Clone the repo**
+**1. Clone the repo**
 
-```bash
 git clone https://github.com/your-username/Luma-Cypress-POC-2025.git
 cd Luma-Cypress-POC-2025
 
-### 2. **Install dependencies**
+**2. Install dependencies**
 npm install
 
-3. **Running Tests**
+**3. Running Tests**
 Running Tests in headless mode (CLI)
 npx cypress run
 
 Running Tests in headed mode (UI)
 npx cypress run --headed
 
-4. **Interactive mode (GUI)**
+**4. Interactive mode (GUI)**
 > npx cypress open
 > Select the E2E Testing
 > Select the browser (eg. Chrome) and click on Start E2E Testing in Chrome
