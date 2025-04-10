@@ -30,6 +30,18 @@ Luma-Cypress-POC-2025/
 ├── package.json                   # Project dependencies and npm scripts.
 ├── package-lock.json              # Auto-generated file to lock dependency versions.
 
+## In simple terms:
+tests/: Where your test scenarios live.
+
+actions/: Where your test steps (like login steps) are written using page objects.
+
+pages/: Where you define all the UI elements (selectors/locators).
+
+fixtures/: Where test data and environment-based credentials are stored.
+
+support/: Where custom commands and pre-test setup live.
+
+cypress.config.js: Tells Cypress how to behave (config, baseUrl, etc.).
 
 ## 🔧 Setup Instructions
 
@@ -43,7 +55,32 @@ cd Luma-Cypress-POC-2025
 npm install
 
 3. **Running Tests**
+Running Tests in headless mode (CLI)
 npx cypress run
 
+Running Tests in headed mode (UI)
+npx cypress run --headed
 
+4. **Interactive mode (GUI)**
+> npx cypress open
+> Select the E2E Testing
+> Select the browser (eg. Chrome) and click on Start E2E Testing in Chrome
+> Select the test that want to run 
+
+## 🌐 Environment Configuration
+**The framework supports multiple environments like dev and production.
+To run against a specific environment, update your test or use Cypress environment variables as needed:**
+
+npx cypress run --env environment=dev
+
+**Test credentials and other data are stored under:**
+cypress/fixtures/dev/credentials.json
+cypress/fixtures/production/credentials.json
+
+## 📸 Reports, Videos, and Screenshots
+**Screenshots of failed tests are saved in:**
+cypress/screenshots/
+
+**Videos of test runs (if enabled):**
+cypress/videos/
 
