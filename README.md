@@ -1,6 +1,8 @@
-# Cypress Mocha Automation Framework (JavaScript)
+# 📘 Cypress Mocha Automation Framework (JavaScript)
 
-This framework is a Cypress-based test automation setup for testing the Luma eCommerce application. It uses the **Mocha** test runner and follows the **Page Object Model (POM)** structure for maintainable, scalable test automation.
+This framework is a **Cypress-based test automation** setup for testing the **Luma eCommerce** application. It uses the **Mocha** test runner and follows the **Page Object Model (POM)** structure for maintainable, scalable test automation.
+
+---
 
 ## 📁 Folder Structure
 
@@ -30,28 +32,28 @@ Luma-Cypress-POC-2025/
 ├── package.json                   # Project dependencies and npm scripts.
 ├── package-lock.json              # Auto-generated file to lock dependency versions.
 
-## In simple terms:
-tests/: Where your test scenarios live.
+---
 
-actions/: Where your test steps (like login steps) are written using page objects.
+## 📌 In Simple Terms
 
-pages/: Where you define all the UI elements (selectors/locators).
+- **tests/** – Where your **test scenarios** live  
+- **actions/** – Where your **test steps** (e.g., login actions) are written using page objects  
+- **pages/** – Where you define **UI elements** (selectors/locators)  
+- **fixtures/** – Where **test data and credentials** for dev/production are stored  
+- **support/** – Where **custom commands** and **setup hooks** reside  
+- **cypress.config.js** – Tells Cypress how to behave (config, baseUrl, timeouts, etc.)
 
-fixtures/: Where test data and environment-based credentials are stored.
-
-support/: Where custom commands and pre-test setup live.
-
-cypress.config.js: Tells Cypress how to behave (config, baseUrl, etc.).
+---
 
 ## 🔧 Setup Instructions
 
-1. **Clone the repo**
+### 1. **Clone the repo**
 
 ```bash
 git clone https://github.com/your-username/Luma-Cypress-POC-2025.git
 cd Luma-Cypress-POC-2025
 
-2. **Install dependencies**
+### 2. **Install dependencies**
 npm install
 
 3. **Running Tests**
