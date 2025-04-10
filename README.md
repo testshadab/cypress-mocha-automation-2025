@@ -49,10 +49,10 @@ Luma-Cypress-POC-2025/
 
 **1. Clone the repo**
 
-https://github.com/testshadab/cypress-mocha-automation-2025.git
+- https://github.com/testshadab/cypress-mocha-automation-2025.git
 
 **2. Install dependencies**
-npm install
+- npm install
 
 **3. Running Tests**
 Running Tests in headless mode (CLI)
