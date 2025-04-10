@@ -8,6 +8,7 @@ This framework is a **Cypress-based test automation** setup for testing the **Lu
 
 Luma-Cypress-POC-2025/  
 │  
+|  
 ├── cypress/  
 │   ├── e2e/  
 │   │   ├── actions/               # This folder contains JS files with business logic.  
