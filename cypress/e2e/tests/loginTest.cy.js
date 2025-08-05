@@ -1,6 +1,8 @@
 /// <reference types="cypress"/>
 
-import { LoginActionPage } from "../actions/loginActionPage";
+import { LoginPage } from "../pages/loginLocatorPage"
+
+const loginPageLoc = new LoginPage();
 
 describe('Login test suite', () => {
 
@@ -12,13 +14,12 @@ describe('Login test suite', () => {
   });
 
   it('User login test', () => {
-    const loginActionPageLoc = new LoginActionPage();
     cy.get('@credentials').then((credentials) => {
-      
       cy.visit(credentials.baseUrl);
       cy.title().should('include', 'Home Page');
-      loginActionPageLoc.login(credentials.email, credentials.password);
+      loginPageLoc.login(credentials.email, credentials.password);
     });
-    loginActionPageLoc.verifyLogoutCTA();
+    loginPageLoc.verifyLogoutCTA();
   });
+
 });

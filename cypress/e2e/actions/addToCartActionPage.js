@@ -34,6 +34,7 @@ export class AddToCartActionPage {
 
     verifyAddToCartItem() {
         addToCartPageLoc.addToCartCTA().click();
+        cy.wait(3000);
         addToCartPageLoc.successMsg().should('be.visible');
         addToCartPageLoc.myCart().click();
         cy.wait(2000);

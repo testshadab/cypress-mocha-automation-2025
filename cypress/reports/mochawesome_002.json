@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 0,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2025-03-31T12:51:20.068Z",
-    "end": "2025-03-31T12:51:48.705Z",
-    "duration": 28637,
+    "failures": 1,
+    "start": "2025-08-05T11:55:46.918Z",
+    "end": "2025-08-05T11:55:47.393Z",
+    "duration": 475,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,61 +18,46 @@
   },
   "results": [
     {
-      "uuid": "1e719aee-b15b-4e5f-9dfd-256e36e1093a",
+      "uuid": "ef676f3b-af5e-4419-9257-b8bbad69e642",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\loginTest.cy.js",
       "file": "cypress\\e2e\\tests\\loginTest.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [],
-      "suites": [
+      "tests": [
         {
-          "uuid": "0938c3e0-b4e0-4141-a1ac-8a720080933d",
-          "title": "Login test suite",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "User login test",
-              "fullTitle": "Login test suite User login test",
-              "timedOut": null,
-              "duration": 24615,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const loginActionPageLoc = new _loginActionPage.LoginActionPage();\ncy.get('@credentials').then(credentials => {\n  cy.visit(credentials.baseUrl);\n  cy.title().should('include', 'Home Page');\n  loginActionPageLoc.login(credentials.email, credentials.password);\n});\nloginActionPageLoc.verifyLogoutCTA();",
-              "err": {},
-              "uuid": "f034efb4-5751-47be-9cb5-15701098c8f0",
-              "parentUUID": "0938c3e0-b4e0-4141-a1ac-8a720080933d",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "f034efb4-5751-47be-9cb5-15701098c8f0"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 24615,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 415,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "CypressError: The following error originated from your test code, not from Cypress.\n\n  > Cannot overwite command for: `input`. An existing command does not exist by that name.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n\nhttps://on.cypress.io/api/custom-commands",
+            "estack": "CypressError: The following error originated from your test code, not from Cypress.\n\n  > Cannot overwite command for: `input`. An existing command does not exist by that name.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n\nhttps://on.cypress.io/api/custom-commands\n    at ./cypress/support/commands.js (webpack://ecom_aut/./cypress/support/commands.js:11:17)\n    at __webpack_require__ (webpack://ecom_aut/webpack/bootstrap:19:0)\n    at eval (webpack://ecom_aut/./cypress/support/e2e.js:17:0)\n    at eval (http://localhost:60695/__cypress/tests?p=cypress\\support\\e2e.js:539:3)\n    at eval (http://localhost:60695/__cypress/tests?p=cypress\\support\\e2e.js:541:12)\n    at eval (<anonymous>)\n\nFrom Cypress Internals:\n      at internalError (http://localhost:60695/__cypress/runner/cypress_runner.js:111969:91)\n      at Object.overwrite (http://localhost:60695/__cypress/runner/cypress_runner.js:112058:11)\n      at <unknown> (http://localhost:60695/__cypress/runner/cypress_runner.js:111853:23)\n      at tryCatcher (http://localhost:60695/__cypress/runner/cypress_runner.js:1807:23)\n      at Object.gotValue (http://localhost:60695/__cypress/runner/cypress_runner.js:6476:18)\n      at Object.gotAccum (http://localhost:60695/__cypress/runner/cypress_runner.js:6465:25)\n      at Object.tryCatcher (http://localhost:60695/__cypress/runner/cypress_runner.js:1807:23)\n      at Promise._settlePromiseFromHandler (http://localhost:60695/__cypress/runner/cypress_runner.js:1519:31)\n      at Promise._settlePromise (http://localhost:60695/__cypress/runner/cypress_runner.js:1576:18)\n      at Promise._settlePromiseCtx (http://localhost:60695/__cypress/runner/cypress_runner.js:1613:10)\n      at _drainQueueStep (http://localhost:60695/__cypress/runner/cypress_runner.js:2411:12)\n      at _drainQueue (http://localhost:60695/__cypress/runner/cypress_runner.js:2400:9)\n      at Async._drainQueues (http://localhost:60695/__cypress/runner/cypress_runner.js:2416:5)\n      at Async.drainQueues (http://localhost:60695/__cypress/runner/cypress_runner.js:2286:14)",
+            "diff": null
+          },
+          "uuid": "e331b76f-1363-4685-b59c-bae02bf5a929",
+          "parentUUID": "ef676f3b-af5e-4419-9257-b8bbad69e642",
+          "isHook": false,
+          "skipped": false
         }
       ],
+      "suites": [],
       "passes": [],
-      "failures": [],
+      "failures": [
+        "e331b76f-1363-4685-b59c-bae02bf5a929"
+      ],
       "pending": [],
       "skipped": [],
-      "duration": 0,
+      "duration": 415,
       "root": true,
-      "rootEmpty": true,
+      "rootEmpty": false,
       "_timeout": 2000
     }
   ],

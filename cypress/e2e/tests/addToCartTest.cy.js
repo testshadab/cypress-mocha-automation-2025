@@ -20,7 +20,7 @@ describe('Add to cart test suite', () => {
     const addToCartPageLoc = new AddToCartActionPage();
     cy.get('@credentials').then((credentials) => {
       cy.visit(credentials.baseUrl);
-      cy.title().should('include', '8888');
+      cy.title().should('include', 'Home Page');
     });
     addToCartPageLoc.selectBag();
     const bagText = this.testData.bagText;
